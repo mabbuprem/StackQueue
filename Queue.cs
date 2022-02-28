@@ -30,6 +30,15 @@ namespace StackQueue
             }
         }
 
+        public void Dequeue()
+        {
+            while (top != null)
+            {
+                Console.WriteLine($"start: {top.data}");
+                top = top.next;
+            }
+        }
+
         public void DisplayQueue()
         {
             if (top == null)
