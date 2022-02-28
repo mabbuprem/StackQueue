@@ -19,6 +19,15 @@ namespace StackQueue
             top = newNode;
         }
 
+        public void Peek_Pop()
+        {
+            while (top != null)
+            {
+                Console.WriteLine($"peek: {top.data}");
+                top = top.next;
+            }
+        }
+
         public void DisplayStack()
         {
             if (top == null)
